@@ -1,21 +1,19 @@
     
 
 // login button 
-document.getElementById('login-btn').addEventListener('click', function(){
-   
-    // email
-    const email = document.getElementById('user-email').value;
-    // console.log(email);
+    document.getElementById('login-btn').addEventListener('click', function(){
 
-    // password
-    const password = document.getElementById('user-password').value;
-    // console.log(password);
+        const emailInput = document.getElementById('user-email').value;
+       
 
-    if(email == "admin@gmail.com" && password == "admin@gmail.com"){
-        window.location.href ="bank.html";  
-    }
-    else{
-       alert('Ohhh No!!!! Invaild Email & Password. Tui ki asolei tor baper chele!!!')
-    }
+        const passwordInput = document.getElementById('user-password').value;
+      
 
-})
+        if(emailInput == "admin@gmail.com" && passwordInput == "admin@gmail.com"){
+            window.location.href ="bank.html";  
+        }
+        else{
+           alert('Ohhh No!!!! Invaild Email & Password. Tui ki asolei tor baper chele!!!')
+        }
+    
+    })
